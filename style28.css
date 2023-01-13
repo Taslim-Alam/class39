@@ -1,0 +1,58 @@
+.transitioneffect {
+    height: 150px;
+    width: 150px;
+    background-color: crimson;
+    transition: width 5s, height 3s;
+}
+
+.transitioneffect:hover {
+    width: 250px;
+    height: 250px;
+}
+
+.animation {
+    height: 150px;
+    width: 150px;
+    position: relative;
+    background-color: crimson;
+    animation-name: color;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+
+}
+
+@keyframes color {
+    0% {
+        left: 0;
+        top: 0;
+        background-color: aquamarine;
+    }
+
+    25% {
+        left: 200px;
+        top: 0;
+        right: 0;
+        background-color: #f4b610;
+    }
+
+    50% {
+        top:200px;
+        left: 200px;
+        bottom: 0;
+        background-color: #149edc;
+    }
+
+    75% {
+        top: 200px;
+        bottom: 0;
+        left: 0;
+        background-color: #e2b594;
+    }
+
+    100% {
+        left: 0;
+        top: 0;
+        background-color: #dbc236;
+    }
+}
